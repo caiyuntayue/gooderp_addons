@@ -112,6 +112,9 @@ odoo.define('web_responsive', function(require) {
 
         // It provides handlers to hide drawer when "unfocused"
         handleClickZones: function() {
+                //实现手机界面二级菜单点击后自动隐藏
+            	$('#odooMenuBarNav').attr('aria-expanded','false')
+  
             this.$el.drawer('close');
             $('.o_sub_menu_content')
                 .parent()
